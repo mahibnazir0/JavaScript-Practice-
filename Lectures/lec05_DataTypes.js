@@ -36,3 +36,27 @@ myFunction= function(){
     console.log("Hello World");
     
 }
+
+/**************** Memory Allocation *****************/
+
+//Stack(Primitive)
+let myname="mahib nazir"
+
+let anothername="nazir ahmed"
+
+console.log(myname);
+console.log(anothername);
+
+//Heap(non-primitive)
+
+let userOne ={
+    email:"userone@email.com",
+    ID:3643234
+}
+let userTwo =userOne
+
+userTwo.email ="rana@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
