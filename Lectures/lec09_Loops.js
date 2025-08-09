@@ -93,17 +93,17 @@ for(let g=1;g<=50;g++)
     } 
 }
 //Q8 input number from user and check whether it is even or odd
-let val=prompt("ENter a number :")
-for(let h=1;h<=val;h++)
-{
-    if( h%2 === 0)
-    {
-        console.log(`${h} is even`);
-    }
-    else{
-        console.log(`${h} is odd`);
-    }
-}
+// let val=prompt("Enter a number :")
+// for(let h=1;h<=val;h++)
+// {  
+//     if( h%2 === 0)
+//     {
+//         console.log(`${h} is even`);
+//     }
+//     else{
+//         console.log(`${h} is odd`);
+//     }
+// }
 // Note: above Q8 is only for consoles(web based)
 
 // Q9 Count how many number b/w 1->100 are divisible by both 3 and 5
@@ -118,3 +118,38 @@ while(j<=100)
     j++;
 }
 console.log(`Count : ${count}`);
+/************************** Break & Continue ***********************/
+// Q1 write program to print 1-100 numbers but any number divisible by 7 comes it stops
+for(let k=1;k<=100;k++)
+{
+    console.log(`Numbers ${k}`);
+    
+    if(k % 7 === 0)
+    {
+        break;
+    }
+}
+// Q2 Print numbers 1-20 and skip multiplies of 3
+for(let l=1;l<=20;l++)
+{
+    if( l % 3 ===0)
+    {
+        continue;
+    }
+    console.log(`Number: ${l}`);
+    
+}
+// Q3 print first five odd numbers
+let counter=0;
+for(let m=1;m<=100;m++)
+{
+    if(m % 2 !== 0)
+    {
+        counter++
+        {
+            console.log(`Odd number are : ${m}`);
+        }
+        
+    }
+    if(counter === 5) break;
+}
