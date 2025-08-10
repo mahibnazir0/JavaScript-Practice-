@@ -32,7 +32,7 @@ function abcd(a,b,c,...val)
 }
 abcd(1,2,3,4,5,67)
 
-//Rturnig a value in function
+//Returnig a value in function
 function xyz(a,b)
 {
     let sum=0;
