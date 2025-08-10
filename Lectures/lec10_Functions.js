@@ -40,4 +40,22 @@ function xyz(a,b)
     
     return sum;
 }
-console.log(lmn(3,5));
+console.log(xyz(3,5));
+// Higher Order Functions
+function higherOrder()
+{
+    return function(){
+        console.log(`My name is Mahib`)
+    }
+}
+higherOrder()();
+
+//Closure Function
+function closureFunc()
+{
+    let y=12;
+    return function(){
+        console.log(y);
+    }
+}
+closureFunc()();
