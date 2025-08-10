@@ -33,11 +33,11 @@ function abcd(a,b,c,...val)
 abcd(1,2,3,4,5,67)
 
 //Returnig a value into a function function
-function xyz(a,b)
+function lmn(a,b)
 {
     let sum=0;
     sum=a+b;
     
     return sum;
 }
-console.log(xyz(3,5));
+console.log(lmn(3,5));
