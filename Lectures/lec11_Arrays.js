@@ -24,3 +24,35 @@ let sortedarr=myarr.sort(function(a,b){
 console.log(myarr);
 
 
+//For-Each
+myarr.forEach(function(a){
+    console.log(a+5);
+    
+})
+
+//Maps
+let maparr=myarr.map(function(a){
+    if(a>10) return a;
+    
+})
+console.log(maparr);
+
+//Filter
+let filterarray=myarr.filter(function(a)
+{
+    if(a>4) return true;
+})
+console.log(filterarray);
+
+//Reduce
+let reduceArray=myarr.reduce(function(accumulator,a){
+    return accumulator+a;
+},0)
+console.log(reduceArray);
+
+//find
+let finArray=myarr.find(function(a)
+{
+    return a === 3;
+})
+console.log(finArray);
