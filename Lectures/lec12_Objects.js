@@ -44,6 +44,7 @@ for(let key in forObj){
 }
 Object.entries(forObj).forEach(function(val){
     console.log(`${val[0]} : ${val[1]}`);
+    
 });
 
 // Deep Clone (i am using obj)
