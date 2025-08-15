@@ -13,4 +13,27 @@ console.dir(variable);
 let variable1 =document.querySelectorAll("h2");
 console.dir(variable1);
 
+// How to change text of tag
+let h1=document.querySelector("h1")
+h1.textContent="Hello, How are you?"
+console.dir(h1)
 
+// If we want to chnage html of text
+
+h1.innerHTML="<i> Hey </i>"
+h1.hidden=false;
+
+// SetAttribute
+// let a=document.querySelector("a");
+// a.setAttribute("href","https://www.google.com");
+
+// Through Image
+let image=document.querySelector("img");
+image.setAttribute("src",
+"https://images.unsplash.com/photo-1742201473141-07daabc7a327?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+);
+
+
+//GetAttribute
+let b=document.querySelector("a")
+console.log(b.getAttribute("href"))
