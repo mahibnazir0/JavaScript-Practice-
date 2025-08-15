@@ -37,3 +37,8 @@ image.setAttribute("src",
 //GetAttribute
 let b=document.querySelector("a")
 console.log(b.getAttribute("href"))
+
+// Dynamic DOM manipulation
+let h3=document.createElement("h3");
+h3.textContent="I am h3";
+document.body.append(h3);
