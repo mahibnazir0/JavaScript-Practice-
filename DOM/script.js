@@ -42,3 +42,31 @@ console.log(b.getAttribute("href"))
 let h3=document.createElement("h3");
 h3.textContent="I am h3";
 document.body.append(h3);
+
+
+// Select all elements of list using loop
+
+// lis.forEach(function(val){
+//     console.log(val.textContent)
+// })
+
+let lis = document.querySelectorAll("li");
+for(let i=0;i<lis.length;i++)
+{
+    console.log(lis[i].textContent);
+}
+
+// Set tilte to div using JS
+
+let div=document.querySelector("div");
+
+div.setAttribute("title","anything");
+
+// add higlight clss to even number of lists
+let  evenUl = document.querySelectorAll("ul li:nth-child(2n)");
+
+
+
+evenUl.forEach(function(elem){
+    elem.classList.add("highlight")
+});
