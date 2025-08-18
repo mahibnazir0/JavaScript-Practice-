@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: "gilroy";
+            box-sizing: border-box;
+            background-color:#222 ;
+        }
+        html,
         body{
-            background-color: black;
-            color:wheat;
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        h1{
+            color:#555;
+            user-select: none;
+            font-size: 8rem;
+            font-weight: 500;
+            width: 100%;
+            height: 100%;
+            
+        }
+        input{
+            display: none;
+            background-color: #555;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin:12px 22px;
+            padding:12px 22px;
+            background-color: rgb(1, 128, 77);
+            color:white;
+            border-radius: 10px;
+            width: 130px;
+            font-weight: 600;
+        }
+        .btn:hover{
+            background-color: rgb(1, 70, 42);
         }
     </style>
 </head>
 <body>
-    <h1>Event Listener</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, atque dolore! Facilis ipsam modi tempore dolor repudiandae, perspiciatis dolore eos quae blanditiis pariatur quibusdam esse odit iure laudantium odio id. Placeat amet sint molestiae esse dicta doloremque at. Esse sit corporis illo aspernatur molestias ipsum repellat excepturi ad temporibus quis voluptate, natus necessitatibus quaerat assumenda.</p>
-    <input type="text" placeholder="Name">
-    
+    <div id="main">
+        <h1>a</h1>
+    </div>
+    <div class="inputFile">
+        <input type="file">
+        <div class="btn">
+            Upload File
+        </div>
+    </div>
     <script src="script.js"></script>
-
 </body>
 </html>
